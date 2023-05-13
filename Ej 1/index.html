@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roliplus</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  
+  
+  <style>
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#ver-productos{
+width: 20%;
+height: 40px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+font-weight: 1000;
+border: 2px solid;
+background-color:floralwhite;
+border-radius: 5px;
+}
+
+#ocultar-productos{
+  width: 20%;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 1000;
+  border: 2px solid;
+  background-color:floralwhite;
+  border-radius: 5px;
+}
+
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #4e54c8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#productos-container{
+  display: none;
+ 
+  flex-wrap: wrap;
+  
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#productos-container .producto{
+  background-color: #252273;
+  color: #66B1F2;
+  text-align: center;
+  width: 330px;
+  margin: 1rem;
+  border-radius: 50px 0 50px 0 ;
+  
+}
+
+#productos-container .producto:hover{
+  background-color: #66B1F2;
+  color: #252273;
+  text-align: center;
+  width: 330px;
+  margin: 1rem;
+  border-radius: 50px 0 50px 0 ;
+  
+}
+
+.precio{
+  padding: 10px 0 10px 0;
+}
+h3{
+  padding: 10px 0 10px 0;
+}
+
+
+/* .producto{
+  border: 1px solid #0000;
+  
+} */
+
+#productos-container .producto img{
+  width: 300px;
+
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+  <header>
+  <button id="ver-productos" onclick="mostrar();">Ver productos</button>
+
+  <button id="ocultar-productos" onclick="ocultar();">Ocultar productos</button>
+  </header>
+
+  <main>
+
+   
+</main>
+<script>
+  function mostrar(){
+  document.getElementById('productos-container').style.display='flex';
+}
+  function ocultar(){
+  document.getElementById('productos-container').style.display='none';
+  }
+  document.write(` <div id="productos-container">
+      
+      
+      
+
+      <div class="producto">
+        <h3>Producto 1</h3>
+        <img src="img/2001.jpg" alt="Producto 1">
+        <p class="precio">$10.99</p>
+      </div>
+      
+      <div class="producto">
+        <h3>Producto 2</h3>
+        <img src="img/Airplane.jpg" alt="Producto 2">
+        <p class="precio">$12.99</p>
+      </div>
+      
+      <div class="producto">
+        <h3>Producto 3</h3>
+        <img src="img/alien.jpg" alt="Producto 2">
+        <p class="precio">$13.99</p>
+      </div>
+
+      <div class="producto">
+        <h3>Producto 4</h3>
+        <img src="img/american-beauty.jpg" alt="Producto 2">
+        <p class="precio">$18.99</p>
+      </div>
+
+      <div class="producto">
+        <h3>Producto 5</h3>
+        <img src="img/anatomy.jpg" alt="Producto 2">
+        <p class="precio">$12.99</p>
+      </div>
+
+      <div class="producto">
+        <h3>Producto 6</h3>
+        <img src="img/chinatown.jpg" alt="Producto 2">
+        <p class="precio">$15.99</p>
+      </div>
+
+      <div class="producto">
+        <h3>Producto 7</h3>
+        <img src="img/Deliverance.jpg" alt="Producto 2">
+        <p class="precio">$12.99</p>
+      </div>
+
+      <div class="producto">
+        <h3>Producto 8</h3>
+        <img src="img/harrison.jpg" alt="Producto 2">
+        <p class="precio">$12.99</p>
+      </div>
+
+      <div class="producto">
+        <h3>Producto 9</h3>
+        <img src="img/the-exorcist.jpg" alt="Producto 2">
+        <p class="precio">$10.99</p>
+      </div>  
+    </div>`);
+  
+  
+</script>
+
+</body>
+</html>
